@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - Money</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>💰 Dashboard Financeiro</h1>
+  <button class="primary" onclick="location.href='index.html'">Voltar</button>
+</header>
+
+<div class="container">
+
+  <div class="summary">
+    <div class="box">
+      <h3>Ganhos</h3>
+      <p id="totalIncome" class="income">R$ 0</p>
+    </div>
+    <div class="box">
+      <h3>Gastos</h3>
+      <p id="totalExpense" class="expense">R$ 0</p>
+    </div>
+  </div>
+
+  <div class="card total-card">
+    <h2>Lucro Total</h2>
+    <p id="totalProfit" class="profit-big">R$ 0</p>
+  </div>
+
+  <div class="card">
+    <h2>Adicionar Transação</h2>
+    <select id="type">
+      <option value="income">Ganho</option>
+      <option value="expense">Gasto</option>
+    </select>
+    <input type="text" id="description" placeholder="Descrição">
+    <input type="number" id="amount" placeholder="Valor">
+    <input type="date" id="date">
+    <button class="primary" onclick="addTransaction()">Adicionar</button>
+  </div>
+
+  <div class="card">
+    <h2>Transações</h2>
+    <table class="table" id="transactionsTable"></table>
+  </div>
+
+  <button class="primary" onclick="location.href='charts.html'">
+    Ver Gráficos
+  </button>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+p {
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* BOTÕES */
+button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background: #1d4ed8;
+}
+
+.danger {
+  background: #ef4444;
+  color: white;
+}
+
+/* RESUMO */
+.summary {
+  display: flex;
+  gap: 20px;
+}
+
+.summary .box {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background: #f9fafb;
+}
+
+.summary h3 {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.income {
+  color: #16a34a;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.expense {
+  color: #dc2626;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* LUCRO PRINCIPAL */
+.total-card {
+  text-align: center;
+  background: #111827;
+  color: white;
+}
+
+.profit-big {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* FORM */
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* TABELA */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.table th, .table td {
+  padding: 12px;
+}
+
+.table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px){
+  .summary {
+    flex-direction: column;
+  }
+
+  .profit-big {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
